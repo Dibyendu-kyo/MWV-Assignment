@@ -17,6 +17,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+            <head>
+                <link rel="stylesheet" href="https://unpkg.com/antd@5.12.8/dist/reset.css" />
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+            </head>
             <body className={`${inter.className} antialiased bg-gray-50`}>{children}</body>
         </html>
     )
