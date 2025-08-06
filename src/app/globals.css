@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet CSS overrides */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-draw-toolbar {
+  display: none !important;
+}
+
+/* Custom styles */
+.timeline-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  background: white;
+  border-left: 1px solid #e8e8e8;
+  height: 100vh;
+  overflow-y: auto;
+  min-width: 400px;
+}
+
+.map-container {
+  position: relative;
+  height: calc(100vh - 200px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.polygon-info {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+/* Drawing point styles */
+.drawing-point {
+  background: transparent !important;
+  border: none !important;
+}
+
+.completion-hint {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Ant Design customizations */
+.ant-layout {
+  background: transparent !important;
+}
+
+.ant-layout-sider {
+  background: white !important;
+}
+
+.ant-card {
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.ant-card-body {
+  padding: 0;
+}
+
+.ant-card-head {
+  padding: 0;
+  border: none;
+}
+
+.ant-list-item {
+  padding: 16px 0 !important;
+  border-bottom: 1px solid #f3f4f6 !important;
+}
+
+.ant-list-item:last-child {
+  border-bottom: none !important;
+}
+
+.ant-btn-lg {
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ant-btn-primary {
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.ant-btn-primary:hover {
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.ant-radio-button-wrapper {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.ant-radio-button-wrapper-checked {
+  background: white !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 6px !important;
+}
+
+.ant-typography h1,
+.ant-typography h2,
+.ant-typography h3,
+.ant-typography h4,
+.ant-typography h5 {
+  color: #111827 !important;
+  font-weight: 600 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Range slider customizations */
+.react-range-track {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.react-range-thumb {
+  height: 24px;
+  width: 24px;
+  background: #1890ff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Loading states */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #1890ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
